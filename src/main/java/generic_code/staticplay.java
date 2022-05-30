@@ -1,12 +1,21 @@
 package generic_code;
 
 public class staticplay {
-    public static int a;
-    staticplay(){
-        a=10;
+    public static int a=10;
+    int y=30;
+
+    public void display(){
+        System.out.println(a + y);
+    }
+
+    public static void show(){
+        System.out.println(a );
     }
 
     public static void main(String args[]){
-        System.out.println(staticplay.a);
+        a=20;
+        staticplay s = new staticplay();
+        s.display();
+        staticplay.show();
     }
 }
